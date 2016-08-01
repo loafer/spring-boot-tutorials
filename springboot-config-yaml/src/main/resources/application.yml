@@ -1,0 +1,10 @@
+property:
+  one: 'Value One'
+connection:
+  username: 'admin'
+  remoteAddress: '192.152.1.20'
+foo:
+  primitive: 100
+  servers:
+    - dev.bar.com
+    - foo.bar.com

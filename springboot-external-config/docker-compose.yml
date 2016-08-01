@@ -1,0 +1,6 @@
+version: '2'
+services:
+  springboot-external-config:
+    image: springboot-external-config
+    environment:
+      - SPRING_APPLICATION_JSON={"property.five":"Value Five Overridden","property.six":"Value Six Overridden","property.seven":"Value Seven"}
