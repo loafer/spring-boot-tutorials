@@ -1,6 +1,6 @@
 package com.github.loafer.demo.datasource;
 
-import com.example.demo.datasource.annotation.TargetDataSource;
+import com.github.loafer.demo.datasource.annotation.TargetDataSource;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;

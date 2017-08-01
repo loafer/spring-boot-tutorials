@@ -24,7 +24,7 @@ public class RoutingDataSource extends AbstractRoutingDataSource{
   @Override
   protected Object determineCurrentLookupKey() {
     String dataSourceName = DataSourceContext.getDatasourceName();
-    logger.info("切换至[{}]数据源.", StringUtils.hasText(dataSourceName)? dataSourceName : "master");
+    logger.info("datasource [{}].", StringUtils.hasText(dataSourceName)? dataSourceName : "master");
     return dataSourceName;
   }
 
@@ -75,7 +75,6 @@ public class RoutingDataSource extends AbstractRoutingDataSource{
             .url(properties.get("url").toString())
             .username(properties.get("username").toString())
             .password(properties.get("password").toString());
-
 
     return factory.build();
   }
